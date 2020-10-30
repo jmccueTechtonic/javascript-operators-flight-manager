@@ -1,4 +1,6 @@
 function Util() {
-
+  function calculateTotalDistributedPassengers() {
+    
+  }
 }
 
