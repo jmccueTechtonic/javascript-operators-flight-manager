@@ -1,13 +1,23 @@
 
 function Util() {
   function calculateTotalDistributedPassengers(distributedPassengers) {
-    return Object.values(distributedPassengers).reduce((acc, el) => acc+el, 0);
-  }
+    let totalDistributedPassengers = 0;
+    let value;
+    for (value in distributedPassengers) {
+       totalDistributedPassengers += distributedPassengers[value];
+    }
+    return totalDistributedPassengers;
+ }
 
-  function calculateTotalNumberOfPassengers(passArr) {
-    return passArr.reduce((acc, el) => acc+=el, 0);
-  }
+ function calculateTotalNumberOfPassengers(passengersArray) {
+    let totalNumberOfPassengers = 0;
+    let passengers;
+    for (passengers of passengersArray) {
+       totalNumberOfPassengers += passengers;
+    }
+    return totalNumberOfPassengers;
+ }
 
-  return {calculateTotalDistributedPassengers, calculateTotalNumberOfPassengers};
+ return {calculateTotalDistributedPassengers, calculateTotalNumberOfPassengers};
 }
 module.exports = Util();
