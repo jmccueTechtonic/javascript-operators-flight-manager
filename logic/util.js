@@ -6,7 +6,7 @@ function Util() {
       for (value in distributedPassengers) {
          totalDistributedPassengers += distributedPassengers[value];
       }
-      return totalDistributedPassengers;
+         return totalDistributedPassengers;
    }
 
    function calculateTotalNumberOfPassengers(passengersArray) {
