@@ -1,11 +1,12 @@
+"use strick"
 function Flights() {
     function calculateNumberOfFlights (passengers, capacity) {
-        if (passengers < 0 || !Number.isInteger(passengers)) {
-            
+         if (passengers < 0 || !Number.isInteger(passengers))
+         if (passengers < 0 || !Number.isInteger(passengers)) {
             throw new Error("The number of passengers must be a positive integer value")
         }
 
-        if (capacity < 0 || !Number.isInteger(capacity)) {
+        if (capacity < 0 || !Number.isInteger(capacity)){
             throw new Error("The capacity of the flight must be a positive integer value")
         }
         let ratio = passengers / capacity;

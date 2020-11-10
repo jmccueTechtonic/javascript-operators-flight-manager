@@ -1,3 +1,4 @@
+"use strick"
 function Passengers() {
   function checkFlightCapacity(capacity, passArr) {
     passArr = passArr.reduce((acc, el) => acc+=el, 0);
